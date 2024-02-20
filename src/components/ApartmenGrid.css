@@ -1,0 +1,23 @@
+.grid{
+    background-color: rgba(21, 20, 20, 0.119);
+    min-height:50vh;
+    border-radius: 2rem;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+
+@media screen and (width <=768px) {
+    .grid{
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+}
