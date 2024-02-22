@@ -1,21 +1,19 @@
 import React from 'react'
-import Navbar from './components/Navbar.jsx'
 import './app.scss'
-import Banner from './components/Banner.jsx'
+import Banner from './layout/Banner.jsx'
 import ApartmentGrid from './components/ApartmentGrid.jsx'
-import Footer from './components/Footer.jsx'
+import Main from './layout/Main.jsx'
 
 
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Banner/>
-      <ApartmentGrid/>
-      <Footer/>
-
-    </div>
+      <>
+      <Main> 
+        <Banner/>
+        <ApartmentGrid/>
+      </Main>
+      </>
   )
 }
 
