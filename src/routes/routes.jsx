@@ -4,7 +4,8 @@ import { createBrowserRouter, Outlet } from 'react-router-dom';
 import Footer from '../layout/Footer.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Main from '../layout/Main.jsx';
-import App from '../App.jsx';
+import HomePage from '../pages/HomePage.jsx';
+import ApartmentPage from '../pages/ApartmentPage.jsx';
 
 
 const HeaderFooterLayout = () => {
@@ -26,11 +27,11 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <App/>, // Remplacez ce composant par le composant de votre page d'accueil
+                element: <HomePage/>
             },
             {
                 path: '/flat',
-                element: <div>nos appartement </div>
+                element: <ApartmentPage/>
             },
             {
                 path: '/about',
