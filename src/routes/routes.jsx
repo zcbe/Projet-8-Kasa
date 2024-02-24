@@ -7,6 +7,7 @@ import Main from '../layout/Main.jsx';
 import HomePage from '../pages/HomePage.jsx';
 import ApartmentPage from '../pages/ApartmentPage.jsx';
 import AboutPage from '../pages/AboutPage.jsx';
+import ErrorPageNotFound from '../pages/ErrorPageNotFound.jsx';
 
 
 const HeaderFooterLayout = () => {
@@ -24,7 +25,7 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
     {
         element: <HeaderFooterLayout />,
-        errorElement: <h1>404 not found</h1>,
+        errorElement: <ErrorPageNotFound/>,
         children: [
             {
                 path: '/',
