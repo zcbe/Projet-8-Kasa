@@ -8,8 +8,12 @@
     padding: 0 2rem;
     color: $color-primary;
     font-weight: 700;
+    @media screen and (width <= 768px) {
+        text-transform: uppercase;
+    }
     &>*:first-child{
         margin-right: auto;
+        font-weight: 400;
     }
     & a{
     text-decoration: none;
