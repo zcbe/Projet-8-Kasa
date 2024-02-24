@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.jsx';
 import Main from '../layout/Main.jsx';
 import HomePage from '../pages/HomePage.jsx';
 import ApartmentPage from '../pages/ApartmentPage.jsx';
+import AboutPage from '../pages/AboutPage.jsx';
 
 
 const HeaderFooterLayout = () => {
@@ -35,8 +36,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <div >A propos</div>
-            }
+                element: <AboutPage/>
+            },
         ],
     }
 ]);

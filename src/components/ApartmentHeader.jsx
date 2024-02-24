@@ -1,7 +1,7 @@
-import React from 'react'
-import "./ApartmentHeader.scss"
+import React from 'react';
+import "./ApartmentHeader.scss";
 
-export function ApartmentHeader() {
+ function ApartmentHeader() {
   return (
     <div className='apartment__header'>
     <div className="apartment__title">
@@ -33,3 +33,5 @@ export function ApartmentHeader() {
 </div>
   )
 }
+
+export default ApartmentHeader;

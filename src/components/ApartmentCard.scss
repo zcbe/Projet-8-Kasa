@@ -10,6 +10,7 @@
     align-items: end;
     min-width: 200px;
     min-height: 200px;
+    background-size: cover;
     @media screen and (width <=768px) {
         .apartment{
             flex-basis: 100%;

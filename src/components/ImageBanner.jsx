@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
 import ApartmentImage from '../assets/apartment.jpg';
-import './ApartmentBanner.scss'
+import './ImageBanner.scss'
 
-export function ApartmentBanner() {
+function ImageBanner() {
   return (
-        <div className='apartment__banner'>
+        <div className='image__banner'>
           <img src={ApartmentImage} alt="Apartment"/>
         </div>  
         );
 }
 
 
+export default ImageBanner;
 
 
 
