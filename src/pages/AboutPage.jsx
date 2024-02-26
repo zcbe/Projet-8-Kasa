@@ -10,10 +10,10 @@ export class AboutPage extends Component {
     <>
     <ImageBanner/>
     <div className='about__container'>  
-    <DescriptionPanel/>
-    <DescriptionPanel/>
-    <DescriptionPanel/>
-    <DescriptionPanel/>
+    <DescriptionPanel title ="Fiabilité" content= "Les annonces postées sur Kasa garantissant u.."/>
+    <DescriptionPanel title ="Respect" content="texte"/>
+    <DescriptionPanel title ="Service" content="texte"/>
+    <DescriptionPanel title ="Responsabilité" content="texte"/>
     </div>
     </>
   );
