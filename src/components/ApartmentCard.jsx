@@ -3,7 +3,7 @@ import "./ApartmentCard.scss"
 import { Link } from "react-router-dom"
  
 function ApartmentCard(props) {
-  console.log("props dans apartment card:", props);
+  //console.log("props dans apartment card:", props);
   
  
 

@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DescriptionPanel.scss";
 
 function DescriptionPanel(props){
+    const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+
+    const toggleDescription = () => {
+        setDescriptionVisible(!isDescriptionVisible);
+    };
+
     return (
         <div className="description__panel">
-        <p className='description__header'>
-            <span>{props.title}</span>
-            <i className="fa-solid fa-chevron-down"></i>    
-        </p>
-        <p className='description__content'>
-            {props.content}
-        </p>
-    </div>
+            <p className='description__header' onClick={toggleDescription}>
+                <span>{props.title}</span>
+                <i className={`fa-solid fa-chevron-${isDescriptionVisible ? 'up' : 'down'}`}></i>    
+            </p>
+            {isDescriptionVisible && (
+                <p className='description__content'>
+                    {props.content}
+                </p>
+            )}
+        </div>
     );
 }
 

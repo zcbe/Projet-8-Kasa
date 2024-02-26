@@ -5,12 +5,13 @@ import ImageBanner from "../components/ImageBanner.jsx";
 import ApartmentHeader from "../components/ApartmentHeader.jsx";
 import {useLocation} from "react-router-dom";
 
+
 function ApartmentPage(){
   const location = useLocation();
-  console.log("location", location);
+  //console.log("location", location);
   //console.log("our apartment id is :", location.state.apartmentId);
   const [flat, setFlat] = useState(null);
-  console.log("flat",flat);
+  //console.log("flat",flat);
 
   useEffect(fetchApartmentData,[]);
 
