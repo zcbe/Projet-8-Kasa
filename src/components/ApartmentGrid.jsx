@@ -21,14 +21,11 @@ function fetchApartments() {
   return (
     <div className="grid">
         {apartments.map((apartment) => (
-          <ApartmentCard title = {apartment.title} imageUrl={apartment.cover}/>
+          <ApartmentCard key={apartment.id} title = {apartment.title} imageUrl={apartment.cover} id={apartment.id}/>
         ))}
-         
-
-      
-       
     </div>
   );
 }
 
 export default ApartmentGrid
+
