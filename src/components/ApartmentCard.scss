@@ -1,7 +1,7 @@
 @use"../scss/variables.scss" as *;
 
 
-.apartment{
+.apartment {
     //background-image: linear-gradient(to top,$color-secondary,$color-primary);
     background-color: var(--red);
     border-radius: 1rem;
@@ -12,27 +12,27 @@
     min-height: 200px;
     background-size: cover;
     position: relative;
-    img{
+
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 1rem;
-        filter:brightness(0.8);
+        filter: brightness(0.8);
 
     }
+
     @media screen and (width <=768px) {
-        .apartment{
+        .apartment {
             flex-basis: 100%;
         }
     }
-    & &__subtitle{
-    width: 31%;
-    margin-inline-start: .5rem;
-    margin-block-end: .5em;
-    color: $color-tertiary;
-    position: absolute;
+
+    & &__subtitle {
+        width: 31%;
+        margin-inline-start: .5rem;
+        margin-block-end: .5em;
+        color: $color-tertiary;
+        position: absolute;
     }
 }
-
-
-

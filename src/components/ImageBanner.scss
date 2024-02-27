@@ -1,9 +1,8 @@
-
 @use "../scss/variables.scss" as *;
 
-.image__banner { 
+.image__banner {
     position: relative;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 
     .btn {
         position: absolute;
@@ -28,10 +27,11 @@
         &.btn-previous {
             left: 0;
         }
-    
+
     }
-    .slide-counter{
-        position:absolute;
+
+    .slide-counter {
+        position: absolute;
         color: $color-tertiary;
         border-radius: 0 0 0 1 rem;
         width: 100%;
@@ -41,7 +41,7 @@
 
 
     .image__container {
-        position: relative; 
+        position: relative;
         height: 20rem;
         width: 100%;
 
@@ -61,6 +61,3 @@
         }
     }
 }
-
-
-
