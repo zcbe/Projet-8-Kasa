@@ -6,7 +6,7 @@
     border-radius: 2rem;
     max-width: 90%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 4%;
     gap: 1rem;
     padding: 1rem;
     justify-content: space-between;
@@ -27,5 +27,29 @@
         justify-content: center;
         background-color: $grid-background-light;
         padding: 0;
+
+
+    &>* {
+        max-width: 
+        
+        30rem;
+        ;
     }
 }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .grid {
+            justify-content: center;
+            background-color: $grid-background-light;
+            padding: 0;
+    
+    
+        &>* {
+            max-width: 25rem;
+            ;
+        }
+    }
+        }
+
+

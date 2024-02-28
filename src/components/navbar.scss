@@ -5,13 +5,11 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    padding: 0 2rem;
+    padding: 3rem 9rem 0rem 6rem;
     color: $color-primary;
-    font-weight: 700;
+    font-weight: 400;
 
-    @media screen and (width <=768px) {
-        text-transform: uppercase;
-    }
+   
 
     &>*:first-child {
         margin-right: auto;
@@ -20,8 +18,9 @@
 
     & a {
         text-decoration: none;
-        color: $color-primary;
+        color: $black-text;
         cursor: pointer;
+        font-size: 24px;
 
         &.active,
         &.hover {
@@ -29,4 +28,18 @@
         }
 
     }
+    @media screen and (width <=768px) {
+        text-transform: uppercase;
+        padding: 1rem 1rem 0rem 1rem;
+
+        & a {
+            font-size: 10px;
+            img{
+                height: 50px;
+            }
+        }
+    }
 }
+
+
+

@@ -7,14 +7,20 @@
     background-image: url("../assets/background-banner.png");
     background-position: center;
     background-size: cover;
-    min-height: 140px;
+    min-height: 222px;
     max-width: 80vw;
     margin: auto;
     border-radius: 2rem;
     display: grid;
     place-items: center;
     color: $color-tertiary;
-    margin-bottom: 2rem;
-    max-width: 90%;
+    margin-bottom: 6rem;
+    max-width: 100%;
+
+    @media screen and (width <= 768px) {
+        min-height: 90px;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
 
 }
