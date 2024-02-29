@@ -21,7 +21,7 @@ function DescriptionPanel(props) {
         <span>{props.title}</span>{" "}
         {/* Titre de la description passé via les props */}
         <i
-          className={`fa-solid fa-chevron-${isDescriptionVisible ? "up" : "down"}`}
+          className={`fa-solid fa-chevron-${isDescriptionVisible ? "down" : "up" }`}
         ></i>{" "}
         {/* Icône indiquant l'état de visibilité de la description */}
       </p>
@@ -33,3 +33,6 @@ function DescriptionPanel(props) {
 }
 
 export default DescriptionPanel;
+
+
+
