@@ -4,24 +4,40 @@
     display: flex;
     margin-bottom: 2rem;
     gap: 1rem;
-    padding-right: 2rem;
+   
 
 
     @media screen and (width <=768px) {
         flex-direction: column;
-        padding-right: 1rem;
+        margin-bottom: 0.5rem;
 
     }
 
     .apartment__title {
-        flex-grow: 1;         /*permet d'élargir la div*/
+        flex-grow: 0.9;         /*permet d'élargir la div*/
         margin-left: 3rem;
-       
+        margin-right: 5rem;
+        @media screen and (width <=768px) {
+            flex-direction: column;
+            padding-right: 1rem;
+            flex-grow: 0;
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+    }
+
+    @media screen and (width <=768px) {
+        padding-right: 10px;
+        margin-left: 1rem;
+        margin-top: 5px;
+      
     }
 
     .apartment__owner {
         display: flex;
         flex-direction: column;
+
+      
 
         @media screen and (width <=768px) {
             flex-direction: row;
@@ -32,10 +48,12 @@
 
     .apartment__owner__details {
         display: flex;
-        gap: 0.5rem;
+        gap: 1.5rem;
+        margin-left: 4em;
 
         @media screen and (width <=768px) {
             order: 1;
+            margin-left: 0em;
         }
     }
 
@@ -44,6 +62,13 @@
         width: 60px;
         border-radius: 50%;
         background-color: $background-dark;
+        @media screen and (width <=768px) {
+            height: 35px;
+            width: 35px;
+            margin-left: -1em;
+            margin-top: 1em;
+        }
+        
     }
 
     h3 {
@@ -52,19 +77,29 @@
         flex-direction: column;
         align-items: end;
         font-weight: 400;
+        margin-top: 8px;
     }
 
     .apartment__owner__stars {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.2rem;
+        gap: 0.5rem;
         color: $background-dark;
-        padding-top: 1em;
-        padding-left: 1em;
+        padding-top: 10px;
+        padding-right: 4em;
+        @media screen and (width <=768px) {
+            padding-left: 0rem;
+            gap: 0;
+       
+        }
 
         * {
             font-size: 2rem;
+            @media screen and (width <=768px) {
+                font-size: 1rem;
+            
+            }
         }
 
         .on {
@@ -99,7 +134,7 @@
             }
 
             @media screen and (min-width: 375px) and (max-width: 767px) {
-                font-size: 15px;
+                font-size: 13px;
      
              }
         }
@@ -111,6 +146,7 @@
             @media screen and (min-width: 375px) and (max-width: 767px) {
                 display: flex;
                 flex-wrap: wrap;
+                
      
              }
 
@@ -120,5 +156,10 @@
                 padding: 0.3em 0.5em;
                 border-radius: 0.7rem;
                 text-align: center;
+                @media screen and (min-width: 375px) and (max-width: 767px) {
+                    font-size: 13px;
+                    width: 20%;
+         
+                 }
             }
         }

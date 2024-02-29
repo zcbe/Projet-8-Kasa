@@ -3,11 +3,12 @@
 .error-page {
     color: $color-primary;
     text-align: center;
+    padding-bottom: 8em;
 
     h1 {
         font-size: 20rem;
-        margin-bottom: 4rem;
-        padding-top: 4rem;
+        margin-bottom: 5rem;
+        padding-top: 6rem;
         @media screen and (width <=768px) {
             font-size: 8rem;
             padding-top: 5rem;

@@ -1,34 +1,45 @@
-@use"../scss/variables.scss" as *;
-
+@use "../scss/variables.scss" as *;
 
 .banner {
-    position: relative;
-    max-width: 100vw;
-    padding-inline: 2 rem;
-    background-image: url("../assets/background-banner.png");
-    background-position: center;
-    background-size: cover;
-    min-height: 222px;
-    max-width: 80vw;
-    margin: auto;
-    border-radius: 2rem;
-    display: grid;
-    place-items: center;
-    color: $color-tertiary;
-    margin-bottom: 6rem;
-    max-width: 100%;
-    filter:brightness(0.4);
-    h2 {
-        position: absolute;
-        color: white;
-        
+  position: relative;
 
-    }
-
+  & h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center; // Pour centrer horizontalement le texte
+    width: 80%; // Ajustez selon vos besoins
+    font-size: 55px;
     @media screen and (width <= 768px) {
-        min-height: 90px;
-        padding-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
+        font-size: 27px;
+       text-align: left;
+      }
+  }
+ 
 }
+.banner > img {
+  max-width: 100vw;
+  padding-inline: 2 rem;
+  background-position: center;
+  background-size: cover;
+  min-height: 222px;
+  max-width: 80vw;
+  margin: auto;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  color: $color-tertiary;
+  margin-bottom: 6rem;
+  max-width: 100%;
+  filter: brightness(0.4);
+
+  @media screen and (width <= 768px) {
+    min-height: 125px;
+    margin-bottom: 2rem;
+  }
+}
+
+
+

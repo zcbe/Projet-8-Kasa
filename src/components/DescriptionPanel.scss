@@ -10,10 +10,14 @@
     p {
         margin-block: 0;
         font-size: 26px;
+        @media screen and (max-width: 768px) { 
+            font-size: 15px;
+        }
     }
 
     @media screen and (max-width: 768px) { /* Appliquer les styles pour les écrans de largeur maximale de 768px (version mobile) */
         flex-basis: 100%; /* Réinitialiser la largeur à 100% */
+       
     }
 
     .description__header {
