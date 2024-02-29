@@ -1,3 +1,47 @@
-.about__container {
-    padding-inline: 4rem;
+.about__banner{
+    height: 15rem;
+    .image__banner {
+        height: 10rem;
+        flex-basis: 80%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        
+    .image__container {
+        height: 14rem;
+      
+    }
+    }
+    
+    @media screen and (width <=768px) {
+        .about__banner{
+            height: 10%;
+        }
+        .image__banner {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .image__container{
+            height: 1px;
+        }
+    }
+
 }
+.about__container {
+    padding-inline: 10rem;
+    padding-top: 2rem;
+    .image__container{
+        height: 1rem;
+    }
+    @media screen and (width <=768px) {
+        .about__container{
+            height: 10%;
+        }
+      
+    }
+
+}
+
+
+
+

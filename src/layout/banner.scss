@@ -2,6 +2,7 @@
 
 
 .banner {
+    position: relative;
     max-width: 100vw;
     padding-inline: 2 rem;
     background-image: url("../assets/background-banner.png");
@@ -16,8 +17,11 @@
     color: $color-tertiary;
     margin-bottom: 6rem;
     max-width: 100%;
+    filter:brightness(0.4);
     h2 {
+        position: absolute;
         color: white;
+        
 
     }
 

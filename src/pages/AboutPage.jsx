@@ -7,12 +7,14 @@ export class AboutPage extends Component {
   render() {
     return (
       <>
-        <ImageBanner />
+        <div className="about__banner">
+          <ImageBanner />
+        </div>
         <div className="about__container">
           <DescriptionPanel title="Fiabilité" content="..." />
           <DescriptionPanel title="Respect" content="..." />
           <DescriptionPanel title="Service" content="..." />
-          <DescriptionPanel title="Responsabilité" content="..." />
+          <DescriptionPanel title="Sécurité" content="..." />
         </div>
       </>
     );

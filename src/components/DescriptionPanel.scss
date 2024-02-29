@@ -1,12 +1,19 @@
 @use "../scss/variables.scss" as *;
 
 .description__panel {
-    flex-basis: 50%;
-    margin-bottom: 1rem;
+    flex-basis: 47%;
+    margin-bottom: 2rem;
     overflow: hidden;
+    margin-left: 3%;
+    margin-right: 3%;
 
     p {
         margin-block: 0;
+        font-size: 26px;
+    }
+
+    @media screen and (max-width: 768px) { /* Appliquer les styles pour les écrans de largeur maximale de 768px (version mobile) */
+        flex-basis: 100%; /* Réinitialiser la largeur à 100% */
     }
 
     .description__header {
@@ -37,3 +44,5 @@
     }
 
 }
+
+

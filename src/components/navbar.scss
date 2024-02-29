@@ -22,24 +22,31 @@
         cursor: pointer;
         font-size: 24px;
 
-        &.active,
-        &.hover {
-            text-decoration: underline;
+        &:hover {
+            text-decoration: underline; 
+
+        }
+
+        &.active {
+            text-decoration: underline; 
         }
 
     }
     @media screen and (width <=768px) {
         text-transform: uppercase;
         padding: 1rem 1rem 0rem 1rem;
-
-        & a {
-            font-size: 10px;
+        .navbar__logo{
             img{
-                height: 50px;
+                height: 48px;
             }
+        }
+        & a {
+            font-size: 12px;
+
         }
     }
 }
+
 
 
 
