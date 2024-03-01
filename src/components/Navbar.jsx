@@ -7,15 +7,14 @@ function Navbar() {
   return (
     // Définition de la structure de la barre de navigation
     <nav className="navbar">
-    
-        <div className="navbar__logo">
-          {" "}
-          {/* Div pour le logo de la barre de navigation */}
-          <img src="logo.png" alt="Logo" />
-        </div>
-    
-        {/* Lien vers la page d'accueil avec le texte 'Accueil' */}
-        <NavLink to="/" exact={true.toString()} activeclassname="active">
+      <div className="navbar__logo">
+        {" "}
+        {/* Div pour le logo de la barre de navigation */}
+        <img src="logo.png" alt="Logo" />
+      </div>
+
+      {/* Lien vers la page d'accueil avec le texte 'Accueil' */}
+      <NavLink to="/" exact={true.toString()} activeclassname="active">
         Accueil
       </NavLink>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ApartmentPage.scss";
-import DescriptionPanel from "../components/DescriptionPanel.jsx";
+import DescriptionPanel from "../components/Collapse.jsx";
 import ImageBanner from "../components/ImageBanner.jsx";
 import ApartmentHeader from "../components/ApartmentHeader.jsx";
 import { useLocation } from "react-router-dom"; // Importe un hook useLocation depuis react-router-dom pour accéder aux données de l'URL
@@ -51,8 +51,3 @@ function ApartmentPage() {
 }
 
 export default ApartmentPage;
-
-
-
-
-

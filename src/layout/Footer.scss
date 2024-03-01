@@ -1,25 +1,20 @@
-@use"../scss/variables.scss" as *;
-
+@use "../scss/variables.scss" as *;
 
 .footer {
-    background-color: $footer-background-color;
-    color: $color-tertiary;
-    padding: 20px;
-    text-align: center;
-    min-height: 11rem;
-    display: grid;
-    place-items: center;
-    font-size: 24px;
-   
+  background-color: $footer-background-color;
+  color: $color-tertiary;
+  padding: 20px;
+  text-align: center;
+  min-height: 11rem;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
 
-    @media screen and (width <= 768px) {
-        font-size: 16px;
-        min-height: 165px;
-        .footer__text{
-            width: 120px;
-        }
-       
+  @media screen and (width <= 768px) {
+    font-size: 16px;
+    min-height: 165px;
+    .footer__text {
+      width: 120px;
     }
-
+  }
 }
-

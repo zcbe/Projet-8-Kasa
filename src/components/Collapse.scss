@@ -1,3 +1,4 @@
+
 @use "../scss/variables.scss" as *;
 
 .description__panel {
@@ -6,22 +7,22 @@
     overflow: hidden;
     margin-left: 3%;
     margin-right: 3%;
-     @media screen and (max-width: 768px) { 
-            margin-bottom: 1rem;
-
-        }
+    
+    @media screen and (max-width: 768px) { 
+        margin-bottom: 1rem;
+    }
 
     p {
         margin-block: 0;
         font-size: 15px;
+
         @media screen and (max-width: 768px) { 
             font-size: 15px;
         }
     }
 
-    @media screen and (max-width: 768px) { /* Appliquer les styles pour les écrans de largeur maximale de 768px (version mobile) */
-        flex-basis: 100%; /* Réinitialiser la largeur à 100% */
-       
+    @media screen and (max-width: 768px) {
+        flex-basis: 100%;
     }
 
     .description__header {
@@ -36,10 +37,12 @@
         i {
             font-size: 2rem;
             cursor: pointer;
-            transition: transform 1s ease; // Ajout de la transition pour l'icône
-          }
-        
-          
+            transition: transform 3s; // Ajout de la transition pour une animation fluide
+        }
+
+        &.rotate180 i {
+            transform: rotate(180deg); // Rotation de 180 degrés lorsque la classe rotate180 est appliquée
+        }
     }
 
     .description__content {
@@ -50,19 +53,7 @@
         position: relative;
         top: -0.3rem;
         z-index: -1;
-
-        
-        
     }
-
 }
 
 
-
-  
-
-
-
-
-
-  

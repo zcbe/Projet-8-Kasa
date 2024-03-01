@@ -1,38 +1,36 @@
-@use"../scss/variables.scss" as *;
-
+@use "../scss/variables.scss" as *;
 
 .apartment {
-    //background-image: linear-gradient(to top,$color-secondary,$color-primary);
-    background-color: var(--red);
+  //background-image: linear-gradient(to top,$color-secondary,$color-primary);
+  background-color: var(--red);
+  border-radius: 1rem;
+  flex-basis: 28%;
+  display: grid;
+  align-items: end;
+  min-width: 200px;
+  min-height: 200px;
+  background-size: cover;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 1rem;
-    flex-basis: 28%;
-    display: grid;
-    align-items: end;
-    min-width: 200px;
-    min-height: 200px;
-    background-size: cover;
-    position: relative;
+    filter: brightness(0.8);
+  }
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 1rem;
-        filter: brightness(0.8);
-
+  @media screen and (width <=768px) {
+    .apartment {
+      flex-basis: 100%;
     }
+  }
 
-    @media screen and (width <=768px) {
-        .apartment {
-            flex-basis: 100%;
-        }
-    }
-
-    & &__subtitle {
-        width: 40%;
-        margin-inline-start: .5rem;
-        margin-block-end: .5em;
-        color: $color-tertiary;
-        position: absolute;
-    }
+  & &__subtitle {
+    width: 40%;
+    margin-inline-start: 0.5rem;
+    margin-block-end: 0.5em;
+    color: $color-tertiary;
+    position: absolute;
+  }
 }

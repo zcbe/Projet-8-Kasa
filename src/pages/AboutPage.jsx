@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ImageBanner from "../components/ImageBanner.jsx";
 import "../pages/AboutPage.scss";
-import DescriptionPanel from "../components/DescriptionPanel.jsx";
+import DescriptionPanel from "../components/Collapse.jsx";
 
 export class AboutPage extends Component {
   render() {

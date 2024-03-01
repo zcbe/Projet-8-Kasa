@@ -1,52 +1,45 @@
-@use"../scss/variables.scss" as *;
-
+@use "../scss/variables.scss" as *;
 
 .navbar {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    padding: 3rem 9rem 0rem 6rem;
-    color: $color-primary;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 9rem 0rem 6rem;
+  color: $color-primary;
+  font-weight: 400;
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    padding: 3rem 4rem 0rem 3rem;
+  }
+
+  & > *:first-child {
+    margin-right: auto;
     font-weight: 400;
+  }
 
-   
+  & a {
+    text-decoration: none;
+    color: $black-text;
+    cursor: pointer;
+    font-size: 24px;
 
-    &>*:first-child {
-        margin-right: auto;
-        font-weight: 400;
+    &:hover {
+      text-decoration: underline;
     }
 
+    &.active {
+      text-decoration: underline;
+    }
+  }
+  @media screen and (width <=768px) {
+    text-transform: uppercase;
+    padding: 1rem 1rem 0rem 1rem;
+    .navbar__logo {
+      img {
+        height: 48px;
+      }
+    }
     & a {
-        text-decoration: none;
-        color: $black-text;
-        cursor: pointer;
-        font-size: 24px;
-
-        &:hover {
-            text-decoration: underline; 
-
-        }
-
-        &.active {
-            text-decoration: underline; 
-        }
-
+      font-size: 12px;
     }
-    @media screen and (width <=768px) {
-        text-transform: uppercase;
-        padding: 1rem 1rem 0rem 1rem;
-        .navbar__logo{
-            img{
-                height: 48px;
-            }
-        }
-        & a {
-            font-size: 12px;
-
-        }
-    }
+  }
 }
-
-
-
-

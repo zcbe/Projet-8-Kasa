@@ -1,27 +1,22 @@
 import React, { useState } from "react";
-import "./DescriptionPanel.scss";
+import "./Collapse.scss"; // Importez le fichier CSS
 
-function DescriptionPanel(props) {
-  // Utilisation du hook useState pour gérer l'état de la visibilité de la description
-  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
-
-  // Fonction pour basculer la visibilité de la description
+const DescriptionPanel = (props) => {
+  const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
   const toggleDescription = () => {
-    setDescriptionVisible(!isDescriptionVisible);
+    setIsDescriptionVisible(!isDescriptionVisible);
   };
 
   return (
     <div className="description__panel">
-      {" "}
       {/* Début de la définition du contenu du panneau de description */}
       <p className="description__header" onClick={toggleDescription}>
-        {" "}
         {/* En-tête du panneau de description, avec la fonction de basculement sur clic */}
         <span>{props.title}</span>{" "}
         {/* Titre de la description passé via les props */}
         <i
-          className={`fa-solid fa-chevron-${isDescriptionVisible ? "down" : "up" }`}
+          className={`fa-solid fa-chevron-${isDescriptionVisible ? "down" : "up" } ${isDescriptionVisible ? "rotate180" : ""}`}
         ></i>{" "}
         {/* Icône indiquant l'état de visibilité de la description */}
       </p>
@@ -30,9 +25,6 @@ function DescriptionPanel(props) {
       )}
     </div>
   );
-}
+};
 
 export default DescriptionPanel;
-
-
-
