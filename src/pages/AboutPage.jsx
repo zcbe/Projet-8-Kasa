@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ImageBanner from "../components/ImageBanner.jsx";
-import "../pages/AboutPage.scss";
-import DescriptionPanel from "../components/Collapse.jsx";
+import "../scss/AboutPage.scss";
+import Collapse from "../components/Collapse.jsx";
 
 export class AboutPage extends Component {
   render() {
@@ -11,10 +11,10 @@ export class AboutPage extends Component {
           <ImageBanner />
         </div>
         <div className="about__container">
-          <DescriptionPanel title="Fiabilité" content="..." />
-          <DescriptionPanel title="Respect" content="..." />
-          <DescriptionPanel title="Service" content="..." />
-          <DescriptionPanel title="Sécurité" content="..." />
+          <Collapse title="Fiabilité" content="..." />
+          <Collapse title="Respect" content="..." />
+          <Collapse title="Service" content="..." />
+          <Collapse title="Sécurité" content="..." />
         </div>
       </>
     );

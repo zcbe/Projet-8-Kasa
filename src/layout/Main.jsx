@@ -1,5 +1,6 @@
 import React from "react";
-import "./Main.scss";
+
+import "../scss/Main.scss";
 
 // Définition du composant fonctionnel Main avec une props "children"
 function Main({ children }) {

@@ -7,6 +7,7 @@
     overflow: hidden;
     margin-left: 3%;
     margin-right: 3%;
+    list-style-type: none ;
     
     @media screen and (max-width: 768px) { 
         margin-bottom: 1rem;
@@ -37,10 +38,10 @@
         i {
             font-size: 2rem;
             cursor: pointer;
-            transition: transform 3s; // Ajout de la transition pour une animation fluide
+            transition: transform 0.5s; // Ajout de la transition pour une animation fluide
         }
 
-        &.rotate180 i {
+        .rotate180  {
             transform: rotate(180deg); // Rotation de 180 degrés lorsque la classe rotate180 est appliquée
         }
     }

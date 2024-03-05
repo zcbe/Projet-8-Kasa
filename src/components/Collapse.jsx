@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Collapse.scss"; // Importez le fichier CSS
+import "../scss/Collapse.scss"; // Importez le fichier CSS
 
 const DescriptionPanel = (props) => {
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);

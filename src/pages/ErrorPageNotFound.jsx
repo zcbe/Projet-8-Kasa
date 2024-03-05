@@ -1,5 +1,5 @@
 import React from "react";
-import "./ErrorPageNotFound.scss";
+import "../scss/ErrorPageNotFound.scss";
 import Navbar from "../components/Navbar.jsx";
 import Main from "../layout/Main.jsx";
 import Footer from "../layout/Footer.jsx";

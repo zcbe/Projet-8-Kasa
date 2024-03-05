@@ -1,16 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; // Importe le composant Link pour la navigation entre les pages
-import "./navbar.scss";
+// Importe le composant Link pour la navigation entre les pages
+import { NavLink } from "react-router-dom"; 
+
+import "../scss/navbar.scss";
+import logo from "../assets/logo.png"
 
 // Définition du composant Navbar
 function Navbar() {
   return (
     // Définition de la structure de la barre de navigation
     <nav className="navbar">
+      
+      {/* Div pour le logo de la barre de navigation */}
       <div className="navbar__logo">
-        {" "}
-        {/* Div pour le logo de la barre de navigation */}
-        <img src="logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
 
       {/* Lien vers la page d'accueil avec le texte 'Accueil' */}

@@ -1,7 +1,7 @@
 import React from "react";
-import "./ApartmentHeader.scss";
+import "../scss/ApartmentHeader.scss";
 
-// composant qui permet d'afficher les détails d'un apartement (titre,location,tags,nom,image,stars)
+// Composant qui permet d'afficher les détails d'un apartement (titre,location,tags,nom,image,stars)
 
 function ApartmentHeader(props) {
   // Définition d'un composant de fonction nommé ApartmentHeader, prenant props comme argument
@@ -46,9 +46,7 @@ function ApartmentHeader(props) {
           {" "}
           {/* Section des étoiles du propriétaire */}
           {[1, 2, 3, 4, 5].map(
-            (
-              num // Itère sur chaque nombre pour les étoiles
-            ) => (
+            (num) => (
               <span key={num} className={props.flat.rating >= num ? "on" : ""}>
                 ★
               </span> // Affiche une étoile pleine si le rating est supérieur ou égal à ce nombre
