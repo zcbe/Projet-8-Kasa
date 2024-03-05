@@ -33,6 +33,7 @@ function ImageBanner(props) {
   // Fonction pour vérifier si des images sont disponibles
   const arePicturesAvailable = () => {
     return pictures && pictures.length > 0;
+    
   };
 
   // Fonction pour obtenir le carousel d'images ou une image par défaut si aucune image n'est disponible
@@ -52,8 +53,8 @@ function ImageBanner(props) {
       {/* Début de la définition du contenu de la bannière d'images */}
       <div className="image__container">{getCarouselOrDefaultImage()}</div>{" "}
       {/* Affichage du carousel d'images ou de l'image par défaut */}
-      {/* Affichage des contrôles de navigation si des images sont disponibles */}
-      {arePicturesAvailable() && (
+      {/* Condition pour afficher les contrôles de navigation uniquement s'il y a plus d'une image */}
+      {arePicturesAvailable() && pictures.length > 1 && (
         <>
           <span className="slide-counter">
             {currentPicture + 1} / {pictures.length}
