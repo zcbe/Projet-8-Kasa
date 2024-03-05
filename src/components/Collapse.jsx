@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "../scss/Collapse.scss"; // Importez le fichier CSS
 
 const DescriptionPanel = (props) => {

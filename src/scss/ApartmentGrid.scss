@@ -15,12 +15,13 @@
   margin-bottom: 3rem;
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    max-width: 40%;
+    max-width: 100%;
+    margin : 0 auto;
   }
   
 
   & > * {
-    width: 100%;
+    width: 90%;
     max-width: 20rem;
   }
 }

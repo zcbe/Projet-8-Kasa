@@ -18,13 +18,16 @@
     object-fit: cover;
     border-radius: 1rem;
     filter: brightness(0.8);
+  
   }
+
 
   @media screen and (width <=768px) {
     .apartment {
       flex-basis: 100%;
     }
   }
+
 
   & &__subtitle {
     width: 40%;
