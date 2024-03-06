@@ -36,12 +36,25 @@
         i {
             font-size: 2rem;
             cursor: pointer;
-            transition: transform 0.5s; // Ajout de la transition pour une animation fluide
+       
+
         }
 
-        .rotate180  {
-            transform: rotate(180deg); // Rotation de 180 degrés lorsque la classe rotate180 est appliquée
+        .rotate  {
+            transition: transform 0.3s ease;
+            transform : rotate(-180deg);
+        } 
+        .reverse {
+            transition: transform 0.3s ease;
+            transform : rotate(0deg);
         }
+    
+    
+    
+
+
+
+
     }
 
     .description__content {

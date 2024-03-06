@@ -17,7 +17,8 @@ const DescriptionPanel = (props) => {
         <span>{props.title}</span>{" "}
         {/* Titre de la description passé via les props */}
         <i
-          className={`fa-solid fa-chevron-${isDescriptionVisible ? "down" : "up" } ${isDescriptionVisible ? "rotate180" : ""}`}
+          className={`fa-solid fa-chevron-down ${isDescriptionVisible ? 
+          "reverse" : "rotate" } `}
         ></i>{" "}
         {/* Icône indiquant l'état de visibilité de la description */}
       </p>
