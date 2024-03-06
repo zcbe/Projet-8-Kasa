@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "../scss/ImageBanner.scss";
+import banner_a_propos from "../assets/bannerapropos.png";
 
 function ImageBanner(props) {
   // Assignation de la liste de photos depuis les props
@@ -39,7 +40,7 @@ function ImageBanner(props) {
   // Fonction pour obtenir le carousel d'images ou une image par défaut si aucune image n'est disponible
   const getCarouselOrDefaultImage = () => {
     if (!arePicturesAvailable()) {
-      return <img src={"./bannerapropos.png"} className="show" alt="" />; // Image par défaut
+      return <img src= {banner_a_propos} className="show" alt="" />; // Image par défaut
     }
     return pictures.map((pic, i) => (
       <img key={pic} src={pic} alt="" className={getClassName(i)}></img> // Carousel d'images
