@@ -6,8 +6,7 @@
   .image__banner {
     height: 10rem;
     flex-basis: 80%;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    
 
     @media screen and (width <=768px) {
       height: 0rem;
@@ -35,7 +34,7 @@
   }
 }
 .about__container {
-  padding-inline: 10rem;
+  padding-inline: 7rem;
   padding-top: 1rem;
   @media screen and (width <=768px) {
     padding-inline: 0rem;

@@ -6,6 +6,8 @@
     margin-bottom: 2rem;
     overflow: hidden;
     list-style-type: none ;
+    margin-left: 4%;
+    margin-right: 4%;
     
     @media screen and (max-width: 768px) { 
         margin-bottom: 1rem;
@@ -13,7 +15,7 @@
 
     p {
         margin-block: 0;
-        font-size: 15px;
+        font-size: 20px;
 
         @media screen and (max-width: 768px) { 
             font-size: 15px;

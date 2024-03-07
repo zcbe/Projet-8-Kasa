@@ -31,6 +31,9 @@
     justify-content: center;
     background-color: $grid-background-light;
     padding: 0;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 
     & > * {
       max-width: 30rem;
