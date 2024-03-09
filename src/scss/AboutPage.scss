@@ -1,7 +1,24 @@
+.about__page__container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* La première et la dernière ligne sont de hauteur automatique, la ligne du milieu remplit tout l'espace restant */
+  min-height: 75vh; 
+  overflow: hidden;
+  align-items: start;
+  margin: 0;
+  padding:0;
+  @media screen and (width <=768px) {
+    min-height: 82vh;
+  }
+}
 .about__banner {
   height: 15rem;
+  margin-bottom: 1rem;
   @media screen and (width <=768px) {
     height: 7rem;
+  }
+  .about__container{
+    padding: 1rem;
+    margin-bottom: auto;
   }
   .image__banner {
     height: 10rem;

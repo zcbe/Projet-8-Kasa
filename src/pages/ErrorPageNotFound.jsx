@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 function ErrorPageNotFound() {
   return (
     <>
+    <div className="error-page-container">
       <Navbar />
       <Main>
         <div className="error-page">
@@ -17,6 +18,7 @@ function ErrorPageNotFound() {
         </div>
       </Main>
       <Footer />
+      </div>
     </>
   );
 }

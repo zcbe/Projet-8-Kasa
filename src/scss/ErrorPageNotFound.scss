@@ -1,9 +1,18 @@
 @use "../scss/variables.scss" as *;
 
+
+.error-page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* La première et la dernière ligne sont de hauteur automatique, la ligne du milieu remplit tout l'espace restant */
+  min-height: 100vh; 
+  overflow: hidden;
+}
+
 .error-page {
   color: $color-primary;
   text-align: center;
   padding-bottom: 8em;
+
 
   h1 {
     font-size: 20rem;
