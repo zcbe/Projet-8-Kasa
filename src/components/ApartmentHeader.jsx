@@ -3,9 +3,8 @@ import "../scss/ApartmentHeader.scss";
 
 // Composant qui permet d'afficher les détails d'un apartement (titre,location,tags,nom,image,stars)
 
-function ApartmentHeader(props) {
+function ApartmentHeader({flat}) {
   // Définition d'un composant de fonction nommé ApartmentHeader, prenant props comme argument
-  const flat = props.flat; // Extraction de la propriété flat des props
   const name = flat.host.name; // Extraction du nom de l'hôte de l'appartement
   const [firstname, lastname] = name.split(" "); // Découpage du nom de l'hôte en prénom et nom
 
